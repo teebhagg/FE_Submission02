@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="Orders.js" defer></script>
+  </head>
+  <body onload="orders()">
+    <nav class="app-bar-wrapper">
+      <div class="app-bar"></div>
+    </nav>
+    <nav class="side-bar-wrapper">
+      <div class="side-bar">
+        <img id="logo" src="./Freddys_Logo.svg" alt="" srcset="" />
+        <ul class="nav-link">
+          <li class="dashboard-tab">
+            <a href="/Dashboard.html">Dashboard</a>
+          </li>
+          <li class="orders-tab">
+            <a href="/Orders.html">Orders</a>
+          </li>
+          <li class="logout-tab">
+            <button class="logout-button">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <section class="order-functions">
+        <h3>Orders</h3>
+        <input type="search" name="search" id="search" />
+      </section>
+      <section class="best-sellers">
+        <table class="order-table">
+          <tr>
+            <th>Product Name</th>
+            <th>Date Created</th>
+            <th>Customer Name</th>
+            <th>Status</th>
+          </tr>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freddy's Candy</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="dialog-container">
+      <div class="login-dialog">
+        <div class="header">
+          <h4>Freddy's Artisanal</h4>
+          <h4>Halloween Candy Shop</h4>
+          <img src="" alt="" />
+        </div>
+        <form class="login-form" >
+          <input type="text" required placeholder="username" id="username" />
+          <input type="password" required placeholder="password" id="password" />
+          <p class="login-error"></p>
+          <button type="submit" onsubmit="auth(e)" class="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="dashboard.js" defer></script>
+  </head>
+  <body onload="dashboard()">
+    <nav class="app-bar-wrapper">
+      <div class="app-bar"></div>
+    </nav>
+    <nav class="side-bar-wrapper">
+      <div class="side-bar">
+        <img id="logo" src="./Freddys_Logo.svg" alt="" srcset="" />
+        <ul class="nav-link">
+          <li class="dashboard-tab">
+            <a href="/Dashboard.html">Dashboard</a>
+          </li>
+          <li class="orders-tab">
+            <a href="/Orders.html">Orders</a>
+          </li>
+          <li class="logout-tab">
+            <button class="logout-button">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <h3>Dashboard</h3>
+      <section class="summary">
+        <div class="daily">
+          <p class="sum-header">Today</p>
+          <h5 class="sum-body">$1456 / 9 orders</h5>
+        </div>
+        <div class="weekly">
+          <p class="sum-header">This Week</p>
+          <h5 class="sum-body">$34k / 120 orders</h5>
+        </div>
+        <div class="monthly">
+          <p class="sum-header">This Month</p>
+          <h5 class="sum-body">$95k / 876 orders</h5>
+        </div>
+      </section>
+      <section class="revenue">
+        <h3>Revenue (Last 7 Days)</h3>
+        <table class="weekly-sales">
+          <tr class="weekly-sales-row">
+            <td class="switch-container">
+              <div class="switch-wrapper">
+                <button class="switch">Monthly Revenue</button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="best-sellers">
+        <h3>Best Sellers</h3>
+        <table class="bs-table">
+          <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Units Sold</th>
+            <th>Revenue</th>
+          </tr>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>

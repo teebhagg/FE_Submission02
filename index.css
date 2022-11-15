@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #76ba99;
+  margin: 0;
+}
+
+h3 {
+  margin-left: 8%;
+  color: white;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: -40px;
+  line-height: 35px;
+}
+
+input {
+  height: 30px;
+  border-radius: 8px;
+  border: 2px solid #8e8e8e;
+}
+
+table{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  border: 1px solid red;
+  background-color: white;
+  border-radius: 8px;
+}
+
+tr{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0 15px 0;
+}
+
+button {
+  height: 35px;
+  border: 1px solid #8e8e8e;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 2px 25px;
+  margin: auto;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.switch-wrapper{
+  position: absolute;
+  top: 0;
+  right: 100%;
+  max-width: 800px;
+}
+
+.switch {
+  position: absolute;
+  /* right: 30px; */
+}
+
+.weekly-sales-row > td {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-top: 50px;
+  margin: 15px 0 15px 0;
+}
+
+#logo {
+  height: 120px;
+  width: 120px;
+  /* margin: auto; */
+}
+
+.login-dialog {
+  background-color: #ffdcae;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 20px;
+}
+
+.dialog-container {
+  text-align: center;
+  display: flex;
+  height: calc(100vh - 1rem);
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.login-form > input{
+  width: 300px;
+}
+
+.app-bar{
+  position: fixed;
+  margin-left: 25%;
+  height: 60px;
+  width: 75%;
+  background-color: blue;
+  z-index: 2;
+}
+
+.side-bar {
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  background-color: #ffdcae;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+}
+
+.content {
+  margin-left: 25%;
+  padding: 80px 10px 10px 10px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.summary > div {
+  height: 100px;
+  width: 250px;
+  background-color: #ced89e;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.order-functions{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout-button{
+  margin-top: 50px;
+}
