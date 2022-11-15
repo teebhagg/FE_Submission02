@@ -6,9 +6,15 @@ body {
   margin: 0;
 }
 
-h3 {
+h3, h2 {
   margin-left: 8%;
   color: white;
+}
+
+#search {
+  margin-right: 8%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 section {
@@ -123,7 +129,7 @@ button:hover{
   margin-left: 25%;
   height: 60px;
   width: 75%;
-  background-color: blue;
+  background-color: #FFB200;
   z-index: 2;
 }
 

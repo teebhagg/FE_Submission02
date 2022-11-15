@@ -1,6 +1,15 @@
 var logoutBtn = document.querySelector('.logout-button');
 
 const orders = async () => {
+
+    access_token = window.localStorage.getItem("freddyAccessToken");
+
+  if (!access_token) {
+    window.history.replaceState({ login: "/index.html" }, "", "/index.html");
+    window.location.reload()
+    return;
+  }
+
   var headers = new Headers();
 
   headers.append(
@@ -39,6 +48,8 @@ const orders = async () => {
 };
 
 logoutBtn.addEventListener('click', function () {
+    window.localStorage.removeItem('freddyRefreshToken');
+    window.localStorage.removeItem('freddyAccessToken');
     window.history.replaceState({login:'/index.html'},'','/index.html');
     window.location.reload();
 })
